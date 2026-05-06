@@ -336,7 +336,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
       {/* Admin header */}
       <div
         style={{
-          background: "linear-gradient(135deg, #1B6B93, #1B9AAA)",
+          background: "linear-gradient(135deg, #622599)",
           padding: "20px 20px 18px",
         }}
       >
@@ -382,8 +382,8 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
               style={{
                 padding: "8px 16px",
                 borderRadius: 10,
-                border: "2px solid rgba(255,255,255,0.3)",
-                background: "rgba(255,255,255,0.1)",
+                border: "2px solid #F3F4F6",
+                background: "#622599",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 12,
@@ -411,9 +411,9 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
         >
           <label
             style={{
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 800,
-              color: "#D4A017",
+              color: "#22C55E",
               textTransform: "uppercase",
               letterSpacing: 1,
               display: "block",
@@ -435,7 +435,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 padding: "10px 20px",
                 borderRadius: 10,
                 border: "none",
-                background: "#D4A017",
+                background: "#22C55E",
                 color: "#fff",
                 fontWeight: 800,
                 fontSize: 13,
@@ -483,7 +483,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 border: activeDay === i ? "none" : "2px solid #F0EDE4",
                 background:
                   activeDay === i
-                    ? "linear-gradient(135deg, #1B9AAA, #1B6B93)"
+                    ? "linear-gradient(135deg, #622599)"
                     : "#fff",
                 color: activeDay === i ? "#fff" : "#777",
                 fontWeight: 800,
@@ -521,9 +521,9 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
               flex: 1,
               padding: "12px",
               borderRadius: 12,
-              border: "2px solid #1B9AAA",
+              border: "2px solid #622599",
               background: showAdd ? "rgba(27,154,170,0.08)" : "transparent",
-              color: "#1B9AAA",
+              color: "#622599",
               fontWeight: 800,
               fontSize: 13,
               cursor: "pointer",
@@ -536,7 +536,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
             style={{
               padding: "12px 20px",
               borderRadius: 12,
-              border: "2px solid #E8E8E0",
+              border: "2px solid #d3d1d1",
               background: "transparent",
               color: "#999",
               fontWeight: 700,
@@ -556,7 +556,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
               borderRadius: 14,
               padding: 18,
               marginBottom: 16,
-              border: "2px solid #1B9AAA",
+              border: "2px solid #622599",
             }}
           >
             <h3
@@ -564,7 +564,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 margin: "0 0 12px",
                 fontSize: 14,
                 fontWeight: 800,
-                color: "#1B6B93",
+                color: "#622599",
               }}
             >
               New Session
@@ -639,7 +639,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 padding: "12px",
                 borderRadius: 12,
                 border: "none",
-                background: "linear-gradient(135deg, #1B9AAA, #1B6B93)",
+                background: "linear-gradient(135deg, #622599)",
                 color: "#fff",
                 fontWeight: 800,
                 fontSize: 14,
