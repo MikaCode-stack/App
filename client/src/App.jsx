@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from "react";
-import { WebGLLights } from "three/src/renderers/webgl/WebGLLights.js";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
@@ -154,7 +153,7 @@ function AdminLogin({ onLogin }) {
           style={{
             fontFamily: "'Bebas Neue', sans-serif",
             fontSize: 28,
-            color: "#622599",
+            color: "#1B6B93",
             margin: "0 0 6px",
             letterSpacing: 2,
           }}
@@ -196,18 +195,18 @@ function AdminLogin({ onLogin }) {
           style={{
             marginTop: 18,
             width: "100%",
-            padding: "18px 14px",
-            background: "linear-gradient(135deg, #622599)",
+            padding: "14px",
+            background: "linear-gradient(135deg, #1B9AAA, #1B6B93)",
             color: "#fff",
             border: "none",
             borderRadius: 12,
             fontWeight: 800,
-            fontSize: 16,
+            fontSize: 15,
             cursor: "pointer",
             opacity: loading ? 0.6 : 1,
           }}
         >
-          {loading ? "Checking..." : "ENTER"}
+          {loading ? "Checking..." : "Enter"}
         </button>
       </div>
     </div>
@@ -336,7 +335,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
       {/* Admin header */}
       <div
         style={{
-          background: "linear-gradient(135deg, #622599)",
+          background: "linear-gradient(135deg, #1B6B93, #1B9AAA)",
           padding: "20px 20px 18px",
         }}
       >
@@ -382,8 +381,8 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
               style={{
                 padding: "8px 16px",
                 borderRadius: 10,
-                border: "2px solid #F3F4F6",
-                background: "#622599",
+                border: "2px solid rgba(255,255,255,0.3)",
+                background: "rgba(255,255,255,0.1)",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 12,
@@ -411,9 +410,9 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
         >
           <label
             style={{
-              fontSize: 14,
+              fontSize: 12,
               fontWeight: 800,
-              color: "#22C55E",
+              color: "#D4A017",
               textTransform: "uppercase",
               letterSpacing: 1,
               display: "block",
@@ -435,7 +434,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 padding: "10px 20px",
                 borderRadius: 10,
                 border: "none",
-                background: "#22C55E",
+                background: "#D4A017",
                 color: "#fff",
                 fontWeight: 800,
                 fontSize: 13,
@@ -483,7 +482,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 border: activeDay === i ? "none" : "2px solid #F0EDE4",
                 background:
                   activeDay === i
-                    ? "linear-gradient(135deg, #622599)"
+                    ? "linear-gradient(135deg, #1B9AAA, #1B6B93)"
                     : "#fff",
                 color: activeDay === i ? "#fff" : "#777",
                 fontWeight: 800,
@@ -521,9 +520,9 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
               flex: 1,
               padding: "12px",
               borderRadius: 12,
-              border: "2px solid #622599",
+              border: "2px solid #1B9AAA",
               background: showAdd ? "rgba(27,154,170,0.08)" : "transparent",
-              color: "#622599",
+              color: "#1B9AAA",
               fontWeight: 800,
               fontSize: 13,
               cursor: "pointer",
@@ -536,7 +535,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
             style={{
               padding: "12px 20px",
               borderRadius: 12,
-              border: "2px solid #d3d1d1",
+              border: "2px solid #E8E8E0",
               background: "transparent",
               color: "#999",
               fontWeight: 700,
@@ -556,7 +555,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
               borderRadius: 14,
               padding: 18,
               marginBottom: 16,
-              border: "2px solid #622599",
+              border: "2px solid #1B9AAA",
             }}
           >
             <h3
@@ -564,7 +563,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 margin: "0 0 12px",
                 fontSize: 14,
                 fontWeight: 800,
-                color: "#622599",
+                color: "#1B6B93",
               }}
             >
               New Session
@@ -639,7 +638,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 padding: "12px",
                 borderRadius: 12,
                 border: "none",
-                background: "linear-gradient(135deg, #622599)",
+                background: "linear-gradient(135deg, #1B9AAA, #1B6B93)",
                 color: "#fff",
                 fontWeight: 800,
                 fontSize: 14,
@@ -1061,7 +1060,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
                   fontSize: 46,
                   lineHeight: 0.92,
                   margin: 0,
-                  color: "#fff",
+                  color: "#1B6B93",
                   letterSpacing: 2,
                 }}
               >
@@ -1072,15 +1071,14 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               <div
                 style={{
                   display: "inline-block",
-                  margin: "8px 0 24px",
-                  padding: "6px 16px",
-                  background: "#8ED63A",
-                  fontWeight: 700,
+                  marginTop: 8,
+                  padding: "4px 16px",
+                  background: "#D4A017",
                   color: "#fff",
-                  fontFamily: "'Noto Sans', sans-serif",
-                  fontSize: 16,
+                  fontFamily: "'Bebas Neue', sans-serif",
+                  fontSize: 15,
                   letterSpacing: 3,
-                  borderRadius: 6,
+                  borderRadius: 4,
                 }}
               >
                 LIVE AGENDA
@@ -1097,7 +1095,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               flexWrap: "wrap",
             }}
           >
-            <span style={{ fontWeight: 800, fontSize: 16, color: "#fff" }}>
+            <span style={{ fontWeight: 800, fontSize: 14, color: "#333" }}>
               May 8 – 10, 2026 &nbsp;·&nbsp; Pointe Jerome
             </span>
             {currentSession && (
@@ -1193,7 +1191,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
           position: "relative",
           zIndex: 1,
           maxWidth: 700,
-          margin: "1.5rem auto",
+          margin: "0 auto",
           padding: "0 20px",
         }}
       >
@@ -1209,7 +1207,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
                 border: "none",
                 background:
                   activeDay === i
-                    ? "linear-gradient(135deg, #622599)"
+                    ? "linear-gradient(135deg, #1B9AAA, #1B6B93)"
                     : "#ECEADE",
                 color: activeDay === i ? "#fff" : "#777",
                 fontWeight: 800,
@@ -1247,7 +1245,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               style={{
                 fontSize: 14,
                 fontWeight: 900,
-                color: "#8ED63A",
+                color: "#D4A017",
                 fontFamily: "'Bebas Neue', sans-serif",
                 letterSpacing: 1.5,
               }}
@@ -1577,7 +1575,7 @@ export default function App() {
               fontStyle: "oblique",
               fontWeight: "bold",
               fontSize: 40,
-              color: "#622599",
+              color: "#1B6B93",
               margin: "0 0 4px",
               letterSpacing: 2,
               lineHeight: 0.95,
@@ -1592,14 +1590,13 @@ export default function App() {
             style={{
               display: "inline-block",
               margin: "8px 0 24px",
-              padding: "6px 16px",
-              background: "#8ED63A",
-              fontWeight: 700,
+              padding: "4px 16px",
+              background: "#D4A017",
               color: "#fff",
               fontFamily: "'Noto Sans', sans-serif",
-              fontSize: 20,
+              fontSize: 14,
               letterSpacing: 3,
-              borderRadius: 6,
+              borderRadius: 4,
             }}
           >
             LIVE AGENDA
@@ -1609,7 +1606,7 @@ export default function App() {
             style={{
               color: "#999",
               fontFamily: "'Noto Sans', sans-serif",
-              fontSize: 18,
+              fontSize: 14,
               marginBottom: 28,
             }}
           >
@@ -1624,7 +1621,7 @@ export default function App() {
               marginBottom: 12,
               borderRadius: 14,
               border: "none",
-              background: "linear-gradient(135deg, #622599)",
+              background: "linear-gradient(135deg, #1B9AAA, #1B6B93)",
               color: "#fff",
               fontWeight: 800,
               fontSize: 16,
@@ -1641,9 +1638,9 @@ export default function App() {
               width: "100%",
               padding: "16px",
               borderRadius: 14,
-              border: "3px solid #622599",
-              background: "#E9E2E9",
-              color: "#622599",
+              border: "2px solid #D4A017",
+              background: "rgba(212,160,23,0.05)",
+              color: "#D4A017",
               fontWeight: 800,
               fontSize: 15,
               cursor: "pointer",
