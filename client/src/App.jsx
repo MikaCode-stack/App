@@ -154,7 +154,7 @@ function AdminLogin({ onLogin }) {
           style={{
             fontFamily: "'Bebas Neue', sans-serif",
             fontSize: 28,
-            color: "#1B6B93",
+            color: "#622599",
             margin: "0 0 6px",
             letterSpacing: 2,
           }}
@@ -196,18 +196,18 @@ function AdminLogin({ onLogin }) {
           style={{
             marginTop: 18,
             width: "100%",
-            padding: "14px",
-            background: "linear-gradient(135deg, #1B9AAA, #1B6B93)",
+            padding: "18px 14px",
+            background: "linear-gradient(135deg, #622599)",
             color: "#fff",
             border: "none",
             borderRadius: 12,
             fontWeight: 800,
-            fontSize: 15,
+            fontSize: 16,
             cursor: "pointer",
             opacity: loading ? 0.6 : 1,
           }}
         >
-          {loading ? "Checking..." : "Enter"}
+          {loading ? "Checking..." : "ENTER"}
         </button>
       </div>
     </div>
@@ -1061,7 +1061,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
                   fontSize: 46,
                   lineHeight: 0.92,
                   margin: 0,
-                  color: "#1B6B93",
+                  color: "#fff",
                   letterSpacing: 2,
                 }}
               >
@@ -1072,14 +1072,15 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               <div
                 style={{
                   display: "inline-block",
-                  marginTop: 8,
-                  padding: "4px 16px",
-                  background: "#D4A017",
+                  margin: "8px 0 24px",
+                  padding: "6px 16px",
+                  background: "#8ED63A",
+                  fontWeight: 700,
                   color: "#fff",
-                  fontFamily: "'Bebas Neue', sans-serif",
-                  fontSize: 15,
+                  fontFamily: "'Noto Sans', sans-serif",
+                  fontSize: 16,
                   letterSpacing: 3,
-                  borderRadius: 4,
+                  borderRadius: 6,
                 }}
               >
                 LIVE AGENDA
@@ -1096,7 +1097,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               flexWrap: "wrap",
             }}
           >
-            <span style={{ fontWeight: 800, fontSize: 14, color: "#333" }}>
+            <span style={{ fontWeight: 800, fontSize: 14, color: "#fff" }}>
               May 8 – 10, 2026 &nbsp;·&nbsp; Pointe Jerome
             </span>
             {currentSession && (
@@ -1192,7 +1193,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
           position: "relative",
           zIndex: 1,
           maxWidth: 700,
-          margin: "0 auto",
+          margin: "1.5rem auto",
           padding: "0 20px",
         }}
       >
@@ -1208,7 +1209,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
                 border: "none",
                 background:
                   activeDay === i
-                    ? "linear-gradient(135deg, #1B9AAA, #1B6B93)"
+                    ? "linear-gradient(135deg, #622599)"
                     : "#ECEADE",
                 color: activeDay === i ? "#fff" : "#777",
                 fontWeight: 800,
@@ -1246,7 +1247,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               style={{
                 fontSize: 14,
                 fontWeight: 900,
-                color: "#D4A017",
+                color: "#8ED63A",
                 fontFamily: "'Bebas Neue', sans-serif",
                 letterSpacing: 1.5,
               }}
@@ -1640,8 +1641,8 @@ export default function App() {
               width: "100%",
               padding: "16px",
               borderRadius: 14,
-              border: "2px solid #622599",
-              background: "rgba(212,160,23,0.05)",
+              border: "3px solid #622599",
+              background: "#E9E2E9",
               color: "#622599",
               fontWeight: 800,
               fontSize: 15,
