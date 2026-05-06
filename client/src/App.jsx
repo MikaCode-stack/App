@@ -1097,7 +1097,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               flexWrap: "wrap",
             }}
           >
-            <span style={{ fontWeight: 800, fontSize: 14, color: "#fff" }}>
+            <span style={{ fontWeight: 800, fontSize: 16, color: "#fff" }}>
               May 8 – 10, 2026 &nbsp;·&nbsp; Pointe Jerome
             </span>
             {currentSession && (
