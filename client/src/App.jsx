@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { WebGLLights } from "three/src/renderers/webgl/WebGLLights.js";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
@@ -1575,7 +1576,7 @@ export default function App() {
               fontStyle: "oblique",
               fontWeight: "bold",
               fontSize: 40,
-              color: "#1B6B93",
+              color: "#622599",
               margin: "0 0 4px",
               letterSpacing: 2,
               lineHeight: 0.95,
@@ -1590,13 +1591,14 @@ export default function App() {
             style={{
               display: "inline-block",
               margin: "8px 0 24px",
-              padding: "4px 16px",
-              background: "#D4A017",
+              padding: "6px 16px",
+              background: "#8ED63A",
+              fontWeight: 700,
               color: "#fff",
               fontFamily: "'Noto Sans', sans-serif",
-              fontSize: 14,
+              fontSize: 20,
               letterSpacing: 3,
-              borderRadius: 4,
+              borderRadius: 6,
             }}
           >
             LIVE AGENDA
@@ -1606,7 +1608,7 @@ export default function App() {
             style={{
               color: "#999",
               fontFamily: "'Noto Sans', sans-serif",
-              fontSize: 14,
+              fontSize: 18,
               marginBottom: 28,
             }}
           >
@@ -1621,7 +1623,7 @@ export default function App() {
               marginBottom: 12,
               borderRadius: 14,
               border: "none",
-              background: "linear-gradient(135deg, #1B9AAA, #1B6B93)",
+              background: "linear-gradient(135deg, #622599)",
               color: "#fff",
               fontWeight: 800,
               fontSize: 16,
@@ -1638,9 +1640,9 @@ export default function App() {
               width: "100%",
               padding: "16px",
               borderRadius: 14,
-              border: "2px solid #D4A017",
+              border: "2px solid #622599",
               background: "rgba(212,160,23,0.05)",
-              color: "#D4A017",
+              color: "#622599",
               fontWeight: 800,
               fontSize: 15,
               cursor: "pointer",
