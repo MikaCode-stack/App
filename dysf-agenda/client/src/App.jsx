@@ -93,7 +93,12 @@ const ScoutLogo = () => (
   <img
     src="/logo.png"
     alt="worldscouting"
-    style={{ width: 200, height: 70, borderRadius: 8, objectFit: "contain" }}
+    style={{
+      width: 150,
+      height: "auto",
+      borderRadius: 8,
+      objectFit: "contain",
+    }}
   />
 );
 
