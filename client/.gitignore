@@ -1,0 +1,28 @@
+# client/node_modules/
+# server/node_modules/
+# node_modules/
+
+# .env
+# .env.local
+# .env.development
+# .env.staging
+# .env.production
+
+# dist/
+# build/
+# .vite/
+
+# logs/
+# *.log
+# npm-debug.log*
+
+# .DS_Store
+# Thumbs.db
+
+# .vscode/
+# .idea/
+
+# coverage/
+
+# *.tgz
+# *.zip
