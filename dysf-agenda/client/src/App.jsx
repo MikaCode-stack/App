@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
+import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 
 const TYPE_CONFIG = {
   plenary: {
@@ -199,7 +199,7 @@ function AdminLogin({ onLogin }) {
             marginTop: 18,
             width: "100%",
             padding: "18px 14px",
-            background: "linear-gradient(135deg, #622599)",
+            background: "#622599",
             color: "#fff",
             border: "none",
             borderRadius: 12,
@@ -338,7 +338,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
       {/* Admin header */}
       <div
         style={{
-          background: "linear-gradient(135deg, #622599)",
+          background: "#622599",
           padding: "20px 20px 18px",
         }}
       >
@@ -483,8 +483,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 padding: "12px",
                 borderRadius: 12,
                 border: activeDay === i ? "none" : "2px solid #F0EDE4",
-                background:
-                  activeDay === i ? "linear-gradient(135deg, #622599)" : "#fff",
+                background: activeDay === i ? "#622599" : "#fff",
                 color: activeDay === i ? "#fff" : "#777",
                 fontWeight: 800,
                 fontSize: 14,
@@ -639,7 +638,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 padding: "12px",
                 borderRadius: 12,
                 border: "none",
-                background: "linear-gradient(135deg, #622599)",
+                background: "#622599",
                 color: "#fff",
                 fontWeight: 800,
                 fontSize: 14,
@@ -1207,10 +1206,7 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
                 padding: "10px",
                 borderRadius: 10,
                 border: "none",
-                background:
-                  activeDay === i
-                    ? "linear-gradient(135deg, #622599)"
-                    : "#ECEADE",
+                background: activeDay === i ? "#622599" : "#ECEADE",
                 color: activeDay === i ? "#fff" : "#777",
                 fontWeight: 800,
                 fontSize: 14,
@@ -1626,7 +1622,7 @@ export default function App() {
               marginBottom: 12,
               borderRadius: 14,
               border: "none",
-              background: "linear-gradient(135deg, #622599)",
+              background: "#622599",
               color: "#fff",
               fontWeight: 800,
               fontSize: 16,
