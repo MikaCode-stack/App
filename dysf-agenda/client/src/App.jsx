@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from "react";
-import { WebGLLights } from "three/src/renderers/webgl/WebGLLights.js";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
