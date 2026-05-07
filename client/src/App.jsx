@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from "react";
-import { WebGLLights } from "three/src/renderers/webgl/WebGLLights.js";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
@@ -482,9 +481,7 @@ function AdminPanel({ agenda, setAgenda, onLogout }) {
                 borderRadius: 12,
                 border: activeDay === i ? "none" : "2px solid #F0EDE4",
                 background:
-                  activeDay === i
-                    ? "linear-gradient(135deg, #622599)"
-                    : "#fff",
+                  activeDay === i ? "linear-gradient(135deg, #622599)" : "#fff",
                 color: activeDay === i ? "#fff" : "#777",
                 fontWeight: 800,
                 fontSize: 14,
@@ -1220,14 +1217,16 @@ function ParticipantView({ agenda, activeDay, setActiveDay, announcement }) {
               }}
             >
               <div>{d.day}</div>
-                <div style={{
+              <div
+                style={{
                   fontSize: 10,
                   fontWeight: 600,
                   opacity: 0.8,
-                  marginTop: 2
-                }}>
-                  {d.date}
-                </div>
+                  marginTop: 2,
+                }}
+              >
+                {d.date}
+              </div>
             </button>
           ))}
         </div>
